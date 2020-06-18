@@ -1,0 +1,33 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CatType {
+  name: String!
+}
+
+type BlogType {
+  title: String!
+  description: String!
+  body: String!
+  author: String!
+  date_posted: String!
+}
+
+type Query {
+  hello: String!
+  cats: [CatType!]!
+  blogs: [BlogType!]!
+}
+
+type Mutation {
+  createBlog(input: BlogInput!): BlogType!
+}
+
+input BlogInput {
+  title: String!
+  description: String!
+  body: String!
+  author: String!
+  date_posted: String!
+}
